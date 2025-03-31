@@ -1,0 +1,8 @@
+name: 'Zoocha Security SecKit Recipe'
+description: 'Provides Security related modules for Zoocha.'
+type: 'Feature'
+
+install:
+  - seckit
+config:
+  strict: false
