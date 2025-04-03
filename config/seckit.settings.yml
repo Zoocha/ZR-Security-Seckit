@@ -2,31 +2,31 @@ _core:
   default_config_hash: x6bhN6WZwfVUI_LLMvRJIUW_2c26VTaBozbfXmJWmro
 seckit_xss:
   csp:
-    checkbox: false
+    checkbox: true
     vendor-prefix:
       x: false
       webkit: false
     report-only: true
-    default-src: ''
-    script-src: ''
-    object-src: ''
-    style-src: ''
-    img-src: ''
-    media-src: ''
-    frame-src: ''
-    frame-ancestors: ''
-    child-src: ''
-    font-src: ''
-    connect-src: ''
+    default-src: self
+    script-src: self
+    object-src: self
+    style-src: self
+    img-src: self
+    media-src: self
+    frame-src: self
+    frame-ancestors: self
+    child-src: self
+    font-src: self
+    connect-src: self
     report-uri: /report-csp-violation
     upgrade-req: false
     policy-uri: ''
   x_xss:
+    select: 2
     seckit_x_xss_option_disable: Disabled
     seckit_x_xss_option_0: '0'
     seckit_x_xss_option_1: 1;
     seckit_x_xss_option_1_block: '1; mode=block'
-    select: 2
 seckit_csrf:
   origin: false
   origin_whitelist: ''
